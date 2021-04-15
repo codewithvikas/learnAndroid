@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EarthQuake</string>
+    <string name="near_the">Near the </string>
+    <string name="empty_state">No Earthquake data found</string>
+    <string name="network_error">Check Internet</string>
+    <string name="setting_menu_item">Settings</string>
+    <string name="setting_title">Earthquake Setting</string>
+</resources>
