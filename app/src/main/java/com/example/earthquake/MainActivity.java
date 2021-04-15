@@ -15,6 +15,8 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -65,10 +67,24 @@ public class MainActivity extends AppCompatActivity implements EarthQuakeItemLis
             makeEmptyStateVisible();
             emptyStateView.setText(R.string.network_error);
         }
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id==R.id.action_Setting){
+                Intent intent = new Intent(this,SettingActivity.class);
+                startActivity(intent);
+                return true;
+        }
 
-
+        return super.onOptionsItemSelected(item);
     }
 
     boolean isInternetAvailable(){
