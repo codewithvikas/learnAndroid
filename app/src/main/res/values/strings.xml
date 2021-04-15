@@ -5,4 +5,8 @@
     <string name="network_error">Check Internet</string>
     <string name="setting_menu_item">Settings</string>
     <string name="setting_title">Earthquake Setting</string>
+
+    <string name="setting_min_magnitude_label">Minimum Magnitude</string>
+    <string name="setting_min_magnitude_key" translatable="false">min_magnitude</string>
+    <string name="setting_min_magnitude_default" translatable="false">6</string>
 </resources>
